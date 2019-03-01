@@ -25,7 +25,7 @@ while revolution<100 and people>=20:
         break
     print("Хотите продать зерно?")
     c = input()
-    if c = "yes":
+    if c == "yes":
         print("сколько зерна хотите продать?")
         d = int(input())
         if d > food:
