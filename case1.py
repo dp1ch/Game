@@ -32,8 +32,7 @@ while revolution<100 and people>=20:
         else:
             food = food - d
             gold = gold + d*5
-    else:
-        break
+   
     print("Хотите посеять зерно?")
     e = input()
     if e == "yes":
