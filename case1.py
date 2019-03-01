@@ -17,10 +17,10 @@ while revolution<100 and people>=20:
     if a == "yes":
         print("Сколько зерна хотите купить?")
         b = int(input())
-        if 7*b > budget:
+        if 7*b > gold:
             print("Не хватает денег, милорд")
         food = food + b
-        budget = budget - 7*b
+        gold=gold-7*b
     else:
         break
     print("Хотите продать зерно?")
@@ -32,7 +32,7 @@ while revolution<100 and people>=20:
             print("Не хватает зерна, милорд")
         else:
             food = food - d
-            budget = budget + d*5
+            gold = gold + d*5
     else:
         break
     print("Хотите посеять зерно?")
@@ -51,10 +51,10 @@ while revolution<100 and people>=20:
     if g == "yes":
         print("Сколько земли хотите купить?")
         u = int(input())
-        if u*200 > budget:
+        if u*200 > gold:
             print("Не хватает денег, милорд")
         else:
-            budget = budget - u*200
+            gold=gold-u*200
             ground = ground + u
     else:
         break
