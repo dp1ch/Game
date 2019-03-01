@@ -12,7 +12,7 @@ while revolution<100 and people>=20:
     year += 1
     food = food-people
     print("Идет год №", year)
-    print("Хотите купить зерно?")
+    print("Хотите купить зерно?(yes/no)")
     a = input()
     if a == "yes":
         print("Сколько зерна хотите купить?")
@@ -22,7 +22,7 @@ while revolution<100 and people>=20:
         food = food + b
         gold=gold-7*b
  
-    print("Хотите продать зерно?")
+    print("Хотите продать зерно?(yes/no)")
     c = input()
     if c == "yes":
         print("сколько зерна хотите продать?")
@@ -33,7 +33,7 @@ while revolution<100 and people>=20:
             food = food - d
             gold = gold + d*5
    
-    print("Хотите посеять зерно?")
+    print("Хотите посеять зерно?(yes/no)")
     e = input()
     if e == "yes":
         print("Сколько зерна хотите посеять?")
@@ -43,7 +43,7 @@ while revolution<100 and people>=20:
         else:
             food = food*3
     
-    print("хотите купить землю милорд?")
+    print("хотите купить землю милорд?(yes/no)")
     g = input()
     if g == "yes":
         print("Сколько земли хотите купить?")
@@ -173,7 +173,7 @@ while revolution<100 and people>=20:
         print('после расправы над предателями вас назвали кровавым тираном')
         revolution+=10
     repressions='df'
-    print('Не кажется ли вашей милости, что пора бы поунять недовольных в империи?')
+    print('Не кажется ли вашей милости, что пора бы поунять недовольных в империи?(да/нет)')
     while repressions!='да' and repressions!='нет':
         repressions = input()
         if repressions=='да':
