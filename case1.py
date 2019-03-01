@@ -12,17 +12,9 @@ while revolution<100 and people>=20:
     year += 1
     food = food-people
     print("Идет год №", year)
-    if event(20) = True:
-        print("Вас настиг ураган,")
-        def hurricane(m):
-            ev = random.randint(1,(0,5*m))
-            return ev
-        hurz=hurricane(food)
-        print('он прошелся прямо по амбарам и уничтожил',hurz,'зерна')
-        food=food-hurz
     print("Хотите купить зерно?")
     a = input()
-    if a = "yes":
+    if a == "yes":
         print("Сколько зерна хотите купить?")
         b = int(input())
         if 7*b > budget:
@@ -45,7 +37,7 @@ while revolution<100 and people>=20:
         break
     print("Хотите посеять зерно?")
     e = input()
-    if e = "yes":
+    if e == "yes":
         print("Сколько зерна хотите посеять?")
         f = int(input())
         if f > food and f > ground:
@@ -56,7 +48,7 @@ while revolution<100 and people>=20:
         break
     print("хотите купить землю милорд?")
     g = input()
-    if g = "yes":
+    if g == "yes":
         print("Сколько земли хотите купить?")
         u = int(input())
         if u*200 > budget:
@@ -196,11 +188,11 @@ while revolution<100 and people>=20:
         else:
             print('говорите яснее, о, синее пламя, пляшущее на курганах врагов')
     sys.stdout.flush()
-    print('еда-'food)
-    print('население-'people)
-    print('казна-'gold)
-    print('бунт-'revolution)
-   print('год-'year)
+    print('еда-',food)
+    print('население-',people)
+    print('казна-',gold)
+    print('бунт-',revolution)
+    print('год-',year)
 print('Потрачено')
 
 
