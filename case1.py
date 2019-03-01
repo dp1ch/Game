@@ -12,9 +12,9 @@ while revolution<100 and people>=20:
     year += 1
     food = food-people
     print("Идет год №", year)
-    print("Хотите купить зерно?(yes/no)")
+    print("Хотите купить зерно?(да/нет)")
     a = input()
-    if a == "yes":
+    if a == "да":
         print("Сколько зерна хотите купить?")
         b = int(input())
         if 7*b > gold:
@@ -22,9 +22,9 @@ while revolution<100 and people>=20:
         food = food + b
         gold=gold-7*b
  
-    print("Хотите продать зерно?(yes/no)")
+    print("Хотите продать зерно?(да/нет)")
     c = input()
-    if c == "yes":
+    if c == "да":
         print("сколько зерна хотите продать?")
         d = int(input())
         if d > food:
@@ -33,9 +33,9 @@ while revolution<100 and people>=20:
             food = food - d
             gold = gold + d*5
    
-    print("Хотите посеять зерно?(yes/no)")
+    print("Хотите посеять зерно?(да/нет)")
     e = input()
-    if e == "yes":
+    if e == "да":
         print("Сколько зерна хотите посеять?")
         f = int(input())
         if f > food and f > ground:
@@ -43,9 +43,9 @@ while revolution<100 and people>=20:
         else:
             food = food*3
     
-    print("хотите купить землю милорд?(yes/no)")
+    print("хотите купить землю милорд?(да/нет)")
     g = input()
-    if g == "yes":
+    if g == "да":
         print("Сколько земли хотите купить?")
         u = int(input())
         if u*200 > gold:
